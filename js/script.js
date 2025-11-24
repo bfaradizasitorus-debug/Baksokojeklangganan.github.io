@@ -1,5 +1,6 @@
 // Toggle class active
 const navbarNav = document.querySelector(".navbar-nav");
+
 // ketika hamburger menu di klik
 document.querySelector("#hamburger-menu").onclick = () => {
   navbarNav.classList.toggle("active");
@@ -13,3 +14,23 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+// ==========================
+// WHATSAPP ORDER FUNCTION
+// ==========================
+function sendToWa(event) {
+  event.preventDefault();
+
+  const Nama = document.getElementById("Nama").value.trim();
+  const Alamat = document.getElementById("Alamat").value.trim();
+  const Pesan = document.getElementById("Pesan").value.trim();
+
+  const text =
+    `Halo bang, saya mau pesan bakso kojek.%0A%0A` +
+    `*Nama:* ${Nama}%0A` +
+    `*Alamat:* ${Alamat}%0A` +
+    `*Pesan:* ${Pesan}`;
+
+  const waUrl = `https://wa.me/6283161204712?text=${text}`;
+  window.open(waUrl, "_blank");
+}

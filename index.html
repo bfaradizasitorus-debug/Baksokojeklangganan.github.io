@@ -164,23 +164,26 @@
       feather.replace();
     </script>
 
-    <!-- My Javascript -->
-    <script src="js/script.js"></script>
+ 
 
     <script>
 function sendToWa(event) {
   event.preventDefault();
 
-  const Nama = document.getElementById("Nama").value;
-  const Alamat = document.getElementById("Alamat").value;
-  const Pesan = document.getElementById("Pesan").value;
+  const Nama = document.getElementById("Nama").value.trim();
+  const Alamat = document.getElementById("Alamat").value.trim();
+  const Pesan = document.getElementById("Pesan").value.trim();
 
-  const text = `Halo bang, saya mau pesan bakso kojek.%0A%0A*Nama:* ${nama}%0A*Kost:* ${kost}%0A*Pesan:* ${pesan}`;
+  const text =
+    `Halo bang, saya mau pesan bakso kojek.%0A%0A` +
+    `*Nama:* ${Nama}%0A` +
+    `*Alamat:* ${Alamat}%0A` +
+    `*Pesan:* ${Pesan}`;
 
   const waUrl = `https://wa.me/6283161204712?text=${text}`;
-
   window.open(waUrl, "_blank");
 }
+
 </script>
 <script>
 function login() {
@@ -206,6 +209,9 @@ function login() {
   document.getElementById("login-overlay").style.display = "none";
 }
 </script>
+
+   <!-- My Javascript -->
+    <script src="js/script.js"></script>
 
   </body>
 </html>
