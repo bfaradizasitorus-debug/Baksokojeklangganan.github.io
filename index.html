@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width
+    , initial-scale=1.0"
+    />
+    <title>Bakso Kojek</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- LOGIN FULLSCREEN -->
+<div id="login-overlay">
+  <div class="login-box">
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Username" required>
+
+    <input type="password" id="password" placeholder="Password" required>
+
+    <button onclick="login()">Masuk</button>
+
+    <p id="error-msg"></p>
+  </div>
+</div>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Bakso <span> Kojek Langganan</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <head>
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Makan Bakso</h1>
+        <p>Bakso adalah makanan favorit orang indonesia.</p>
+      <a 
+  href="https://wa.me/6281260995857?text=Halo%20kak,%20saya%20mau%20pesan%20Bakso." 
+  class="cta" 
+  target="_blank">
+  Beli Sekarang
+</a>
+
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/KOJEK.jpg" alt="Bakso Kojek Atas" />
+        </div>
+        <div class="content">
+          <h3>Kenapa kalian harus membeli BAKSO KOJEK LANGGANAN?</h3>
+          <p>
+            Karena Bakso Kojek Langganan terkenal sangat enak dan harganya ramah dikantong, tak heran banyak 
+            pelanggan yang datang kembali setiap hari! Ada dua varian bakso istimewa, yaitu Bakso Daging yang 
+            gurih lembut dan Bakso Mercon yang pedas nagih. Disajikan dengan pilihan kuah khas ada Kuah Kari 
+            yang harum rempah dan Kuah Kacang yang kental dan gurih, perpaduan sempurna untuk menggoyang lidahmu 
+            setiap suapan!
+          </p>
+        </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Menu Section start -->
+     <section id="menu" class="menu">
+      <h2><span>Menu</h2>
+        <p>Kami memiliki 2 varian rasa bakso dan 2 varian kuah nya. 
+        </p>
+
+        <div class="row">
+          <div class="menu-card">
+            <img src="img/menu/kojekdaging.jpg" alt="Bakso Daging Kuah Kari" class="menu-card-img">
+            <h3 class="menu-card-title">- Bakso Daging Kuah Kari -</h3>
+            <p class="menu-card-price">IDR 5K</p>
+          </div>
+          <div class="menu-card">
+            <img src="img/menu/kacangdaging.jpg" alt="Bakso Daging Kuah Kacang" class="menu-card-img">
+            <h3 class="menu-card-title">- Bakso Daging Kuah Kacang -</h3>
+            <p class="menu-card-price">IDR 5K</p>
+          </div>
+          <div class="menu-card">
+            <img src="img/menu/karimercon.jpg" alt="Bakso Mercon Kuah Kari" class="menu-card-img">
+            <h3 class="menu-card-title">- Bakso Mercon Kuah Kari -</h3>
+            <p class="menu-card-price">IDR 5K</p>
+          </div>
+          <div class="menu-card">
+            <img src="img/menu/mercon kacang.jpg" alt="Bakso Mercon Kuah Kacang" class="menu-card-img">
+            <h3 class="menu-card-title">- Bakso Mercon Kuah Kacang -</h3>
+            <p class="menu-card-price">IDR 5K</p>
+          </div>
+        </div>
+     </section>
+     <!-- Menu Section end -->
+
+     <!-- Menu Section start -->
+      <section id="contact" class="contact">
+        <h2><span>Kontak</span> Kami</h2>
+        <p>Alamat dan Kontak kami. Kirim pesanan anda dan kami siap mengantarkan sampai depan kost</p>
+
+        <div class="row">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.4052450215177!2d98.58542795841343!3d3.49323290733189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303125197f331eeb%3A0x1c418b38fc4ea5e!2sUINSU%20Medan%20Tuntungan%20Kampus%20IV!5e0!3m2!1sid!2sid!4v1763877506399!5m2!1sid!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe> 
+
+         <form onsubmit="sendToWa(event)">
+  <div class="input-group">
+    <i data-feather="user"></i>
+    <input type="text" id="Nama" placeholder="Nama" required>
+  </div>
+
+  <div class="input-group">
+    <i data-feather="map-pin"></i>
+    <input type="text" id="Alamat" placeholder="Alamat" required>
+  </div>
+
+  <div class="input-group">
+    <i data-feather="message-circle"></i>
+    <input type="text" id="Pesan" placeholder="Pesan" required>
+  </div>
+
+  <button type="submit" class="btn">Kirim pesan</button>
+</form>
+
+      <!-- Menu Section end -->
+
+    
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+
+    <script>
+function sendToWa(event) {
+  event.preventDefault();
+
+  const Nama = document.getElementById("Nama").value;
+  const Alamat = document.getElementById("Alamat").value;
+  const Pesan = document.getElementById("Pesan").value;
+
+  const text = `Halo bang, saya mau pesan bakso kojek.%0A%0A*Nama:* ${nama}%0A*Kost:* ${kost}%0A*Pesan:* ${pesan}`;
+
+  const waUrl = `https://wa.me/6283161204712?text=${text}`;
+
+  window.open(waUrl, "_blank");
+}
+</script>
+<script>
+function login() {
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+  const error = document.getElementById("error-msg");
+
+  // PASSWORD MINIMAL 8 KARAKTER, ADA ANGKA, HURUF, SIMBOL
+  const passRules = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&.,])[A-Za-z\d@$!%*#?&.,]{8,}$/;
+
+  if (user === "") {
+    error.textContent = "Username tidak boleh kosong";
+    return;
+  }
+
+  if (!passRules.test(pass)) {
+    error.textContent =
+      "Password minimal 8 karakter, harus ada huruf, angka dan simbol.";
+    return;
+  }
+
+  // Jika benar → hilangkan login overlay
+  document.getElementById("login-overlay").style.display = "none";
+}
+</script>
+
+  </body>
+</html>
