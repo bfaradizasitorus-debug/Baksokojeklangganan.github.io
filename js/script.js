@@ -31,6 +31,6 @@ function sendToWa(event) {
     `*Alamat:* ${Alamat}%0A` +
     `*Pesan:* ${Pesan}`;
 
-  const waUrl = `https://wa.me/6283161204712?text=${text}`;
+  const waUrl = `https://wa.me/6281260995857?text=${text}`;
   window.open(waUrl, "_blank");
 }
